@@ -12,19 +12,19 @@
       <h3>{{dish.name | uppercase}}</h3>
       </mat-card-title>
     
-  <img mat-card-image src={{dish.image}} alt={{dish.name}}>
-    <mat-card-content>
-      <p>{{dish.description}}
-      </p>
-      <mat-card-actions>
-        <button mat-button (click)="goBack()">BACK</button>
-        <button mat-button>LIKE</button>
-        <button mat-button>SHARE</button>
-      </mat-card-actions>
-    </mat-card-content>
-    <hr>
-  
-  </div>
+      <img mat-card-image src={{dish.image}} alt={{dish.name}}>
+      <mat-card-content>
+        <p>{{dish.description}}
+        </p>
+        <mat-card-actions>
+          <button mat-button (click)="goBack()">BACK</button>
+          <button mat-button>LIKE</button>
+          <button mat-button>SHARE</button>
+        </mat-card-actions>
+      </mat-card-content>
+      <hr>
+    
+    </div>
   
   <div fxFlex="40" *ngIf="dish">
     <mat-list >

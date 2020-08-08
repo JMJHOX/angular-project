@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {Dish} from '../shared/dish';
 import {DishService} from '../services/dish.service'
-
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-menu',
@@ -18,6 +18,7 @@ constructor( private dishService:DishService){}
 ngOnInit(){
 
   this.dishes=this.dishService.getDishes();
+  console.log("menucompo");
 }
 
 onSelect(dish:Dish){

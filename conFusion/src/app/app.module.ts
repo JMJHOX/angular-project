@@ -44,13 +44,16 @@ import {MatDialogModule} from '@angular/material/dialog';
     MatGridListModule,
     MatCardModule,
     MatButtonModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MatDialogModule
   ],
   providers: [
     DishService,
     PromotionService,
     LeaderService
   ],
+  entryComponents:[
+    LoginComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -17,5 +17,5 @@ constructor(public dialogRef: MatDialogRef<LoginComponent>) { }
 onSubmit(){
   console.log('User: ',this.user);
   this.dialogRef.close();
-}
+  }
 }

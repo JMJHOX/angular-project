@@ -17,8 +17,8 @@ constructor( private dishService:DishService){}
 
 ngOnInit(){
 
-  this.dishes=this.dishService.getDishes();
-  console.log("menucompo");
+  this.dishService.getDishes()
+  .then((dishes)=> this.dishes=dishes);
 }
 
 onSelect(dish:Dish){

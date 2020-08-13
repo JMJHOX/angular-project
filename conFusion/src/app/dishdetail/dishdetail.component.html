@@ -9,9 +9,8 @@
   <div fxFlex="40" *ngIf="dish">
       
       <mat-card-title>
-      <h3>{{dish.name | uppercase}}</h3>
+      <h3 *ngIf="dish">{{dish.name | uppercase}}</h3>
       </mat-card-title>
-    
       <img mat-card-image src={{dish.image}} alt={{dish.name}}>
       <mat-card-content>
         <p>{{dish.description}}
@@ -23,9 +22,10 @@
         </mat-card-actions>
       </mat-card-content>
       <hr>
-    
     </div>
-  
+    <div fxFlex [hidden]="dish">
+      <mat-spinner></mat-spinner><h4>Loading...please Wait</h4>
+    </div>
   <div fxFlex="40" *ngIf="dish">
     <mat-list >
       <h1>Comments</h1>
@@ -37,4 +37,7 @@
           </p>
         </mat-list-item>
     </mat-list>
+    <div fxFlex [hidden]="dish">
+      <mat-spinner></mat-spinner><h4>Loading...please Wait</h4>
+    </div>
 </div>

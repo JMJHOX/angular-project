@@ -1,5 +1,7 @@
 # angular-project
  
+ This project is made for the course Front-End JavaScript Frameworks: Angular <br> 
+ https://www.coursera.org/learn/angular<br>
 # ConFusion
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.2.1.
@@ -7,7 +9,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-°npm install if you fork it.
+Â°npm install if you fork it.
 ## Code scaffolding
 
 Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.

@@ -1,16 +1,15 @@
-import { TestBed } from '@angular/core/testing';
+import { TestBed, inject } from '@angular/core/testing';
 
 import { LeaderService } from './leader.service';
 
 describe('LeaderService', () => {
-  let service: LeaderService;
-
   beforeEach(() => {
-    TestBed.configureTestingModule({});
-    service = TestBed.inject(LeaderService);
+    TestBed.configureTestingModule({
+      providers: [LeaderService]
+    });
   });
 
-  it('should be created', () => {
+  it('should be created', inject([LeaderService], (service: LeaderService) => {
     expect(service).toBeTruthy();
-  });
+  }));
 });
